@@ -1,0 +1,13 @@
+{
+  "name": "final-task-app",
+  "version": "1.0.0",
+  "description": "Node.js app with landing page and with REST API and Prometheus metrics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "prom-client": "^14.0.0"
+  }
+}

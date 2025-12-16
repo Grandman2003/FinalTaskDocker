@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 5s            # частота опроса - каждые 5 секунд
+
+scrape_configs:
+  - job_name: "final-task-app-metrics"
+    metrics_path: "/metrics"     # наш эндпойнт метрик
+    static_configs:
+      - targets: ["app:3000"]    # адрес приложения (имя сервиса и порт)
